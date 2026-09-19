@@ -1,0 +1,6 @@
+node_modules
+dist
+*.local
+
+# never commit real configuration (kept as GH Actions secret ENV_FILE)
+.env
