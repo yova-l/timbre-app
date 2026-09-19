@@ -13,7 +13,7 @@ export default function Header() {
         </svg>
       </div>
       <h1 className="text-2xl font-bold tracking-tight text-slate-900">{title}</h1>
-      <p className="mt-1.5 text-sm text-slate-500">Tocá un departamento para tocar el timbre</p>
+      <p className="mt-1.5 text-sm text-slate-500">Tocá un departamento para avisar por WhatsApp</p>
     </header>
   )
 }
