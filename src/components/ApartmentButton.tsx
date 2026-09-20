@@ -8,9 +8,9 @@ export default function ApartmentButton({ apt, className = '' }: { apt: Apartmen
   const labels = (
     <>
       <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-400">
-        Piso {apt.floor}
+        {apt.floor === 0 ? 'Planta Baja' : `Piso ${apt.floor}`}
       </span>
-      <span className="text-sm font-bold">Dpto {apt.letter}</span>
+      <span className="text-sm font-bold">{apt.label}</span>
     </>
   )
 
@@ -25,7 +25,7 @@ export default function ApartmentButton({ apt, className = '' }: { apt: Apartmen
   return (
     <a
       href={waLink(apt)}
-      aria-label={`Timbre departamento ${apt.floor}${apt.letter}`}
+      aria-label={`Timbre ${apt.label}`}
       className={`${base} ${className} border-slate-200 bg-white text-slate-800 hover:border-emerald-400 hover:shadow-md active:scale-95`}
     >
       {labels}
