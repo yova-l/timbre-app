@@ -32,12 +32,12 @@ export default function ScrollHint() {
           fill="none"
           stroke="currentColor"
           strokeWidth="2.5"
-          className="h-5 w-5 animate-bounce text-slate-500"
+          className="h-5 w-5 animate-bounce text-emerald-600"
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
         </svg>
       </div>
-      <div className="h-14 w-full bg-gradient-to-t from-slate-100 via-slate-100/70 to-transparent backdrop-blur-[2px]" />
+      <div className="h-16 w-full bg-gradient-to-t from-emerald-200/80 via-emerald-100/50 to-transparent backdrop-blur-[4px]" />
     </div>
   )
 }
